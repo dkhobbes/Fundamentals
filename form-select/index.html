@@ -4,7 +4,55 @@
     <meta charset="utf-8">
     <title>Form Select</title>
     <style>
-
+      .select {
+        position: relative;
+      }
+      .select:after {
+        position: absolute;
+        top: 20px;
+        left: 265px;
+        content: "";
+        border: 8px solid transparent;
+        border-top-color: lightgray;
+      }
+      .select select {
+        appearance: none;
+        width: 320px;
+        height: 60px;
+        border: 10px solid #00aec7;
+        text-indent: 5px;
+      }
+      .select .select-item {
+        margin-top: 20px;
+        width: 300px;
+        height: 40px;
+      }
+      .select .select-value {
+        line-height: 40px;
+        background-color: #fff;
+        border: 1px solid gray;
+        padding: 0;
+        list-style-type: none;
+      }
+      .select-value li {
+        text-decoration: none;
+        list-style:none;
+      }
+      .select-value a,.select-value a:hover {
+        display: block;
+        color: #444;
+        padding-left: 10px;
+        text-decoration: none;
+      }
+      .select-value li:not(:first-child) a:hover {
+        background-color: lightgray;
+      }
+      .select-value li:not(:first-child) {
+        display: none;
+      }
+      .select-value:hover li {
+        display: block;
+      }
     </style>
   </head>
   <body>
